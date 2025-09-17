@@ -2,3 +2,4 @@ Los commits de los 4:
 - Victor
 - Marc
 - Patrick
+- Adam
