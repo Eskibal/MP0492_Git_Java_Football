@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  *  Class to define the defender
  */
-public class Defender { 
+public class Defender extends Plaayer { 
 	boolean mark;
 
     public void steal(Ball ball){
