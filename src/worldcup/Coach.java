@@ -23,5 +23,5 @@ public class Coach extends Person {
 	public void setStyle(String style) {
 		this.style = style;
 	}
-
+	
 }
