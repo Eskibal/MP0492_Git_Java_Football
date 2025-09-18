@@ -21,6 +21,6 @@ public class Midfielder extends Player {
 	}
 
 	public void organize() {
-		System.out.print1n("organizing");
+		System.out.println("organizing");
 	}
 }
