@@ -4,6 +4,11 @@ package worldcup;
  * Class to define the midfielder
  */
 public class Midfielder extends Player {
+	public Midfielder(String position) {
+		super(position);
+		// TODO Auto-generated constructor stub
+	}
+
 	private boolean vision;
 
 	/**

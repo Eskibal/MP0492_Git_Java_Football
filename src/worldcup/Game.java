@@ -77,41 +77,41 @@ public class Game {
 		Game game = new Game();
 		game.setField(new Field(100));
 		game.setDate(new Date());
-		game.setBall(new Ball());
+		game.setBall(new Ball(null));
 
 		// create players team A
 		ArrayList<Player> listA = new ArrayList<Player>();
-		listA.add(new Goalkeeper());
+		listA.add(new Goalkeeper("Goalkeeper1"));
 		// create 4 defender players for teamA
-		listA.add(new Defender());
-		listA.add(new Defender());
-		listA.add(new Defender());
-		listA.add(new Defender());
+		listA.add(new Defender("Left defender"));
+		listA.add(new Defender("Right defender"));
+		listA.add(new Defender("Center Defender"));
+		listA.add(new Defender("Bench"));
 		// create 4 midfielder players for teamA
-		listA.add(new Midfielder());
-		listA.add(new Midfielder());
-		listA.add(new Midfielder());
-		listA.add(new Midfielder());
+		listA.add(new Midfielder("Left Midfielder"));
+		listA.add(new Midfielder("Right Midfielder"));
+		listA.add(new Midfielder("Center Midfielder"));
+		listA.add(new Midfielder("Bench"));
 		// create 2 forward players for teamA
-		listA.add(new Forward());
-		listA.add(new Forward());
+		listA.add(new Forward("Left Forward"));
+		listA.add(new Forward("Right Forward"));
 
 		// create players team B
 		ArrayList<Player> listB = new ArrayList<Player>();
-		listB.add(new Goalkeeper());
+		listB.add(new Goalkeeper("Goalkeeper2"));
 		// create 4 defender players for teamA
-		listB.add(new Defender());
-		listB.add(new Defender());
-		listB.add(new Defender());
-		listB.add(new Defender());
+		listB.add(new Defender("Left defender"));
+		listB.add(new Defender("Right defender"));
+		listB.add(new Defender("Right defender"));
+		listB.add(new Defender("Center Defender"));
 		// create 4 midfielder players for teamA
-		listB.add(new Midfielder());
-		listB.add(new Midfielder());
-		listB.add(new Midfielder());
-		listB.add(new Midfielder());
+		listB.add(new Midfielder("Left Midfielder"));
+		listB.add(new Midfielder("Right Midfielder"));
+		listB.add(new Midfielder("Center Midfielder"));
+		listB.add(new Midfielder("Bench"));
 		// create 2 forward players for teamA
-		listB.add(new Forward());
-		listB.add(new Forward());
+		listB.add(new Forward("Left Forward"));
+		listB.add(new Forward("Right Forward"));
 
 		// create teams
 		Team teamA = new Team("NewTeam");
@@ -157,7 +157,7 @@ public class Game {
 			// specific actions
 			if (selectedPlayer instanceof Forward) {
 				((Forward) selectedPlayer).drible();
-				((Forward) selectedPlayer).kick(this.getBall());
+				((Forward) selectedPlayer).kickBall(this.getBall());
 			} else if (selectedPlayer instanceof Midfielder) {
 				((Midfielder) selectedPlayer).organize();
 			} else if (selectedPlayer instanceof Defender) {

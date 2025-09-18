@@ -6,6 +6,11 @@ import java.util.Random;
  * Class to define the forward
  */
 public class Forward extends Player {
+	public Forward(String position) {
+		super(position);
+		// TODO Auto-generated constructor stub
+	}
+
 	boolean killer;
 
 	public void drible() {
